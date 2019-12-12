@@ -1,0 +1,11 @@
+logging:
+  file:
+    max-size: 1MB
+    max-history: 30
+  level:
+    root: info
+    org.springframework.boot.actuate: info
+    org.zalando.logbook: TRACE
+    com.sishu: debug
+    net.devh.boot: debug
+    com.zaxxer.hikari: debug
