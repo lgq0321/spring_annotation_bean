@@ -14,7 +14,6 @@ import java.util.Map;
 public class Demo5ImportSelector implements ImportSelector {
     @Override
     public String[] selectImports(AnnotationMetadata annotationMetadata) {
-//        annotationMetadata.getAnnotationAttributes
         String name = Demo5.class.getName();
         Map<String, Object> attributes = annotationMetadata.getAnnotationAttributes(EnableDefineService.class.getName());
         return new String[]{Demo5.class.getName()};
